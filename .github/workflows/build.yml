@@ -48,7 +48,9 @@ jobs:
           log_level: debug # [default: info] log level
           working_directory: . # [default: .] directory to run mise in
       - name: Install project dependencies
-        run: mise run install
+        run: |
+          mise activate
+          mise run install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -60,6 +62,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: Europe/Berlin
         run: |
+          mise activate
           hugo \
             --gc \
             --minify \
