@@ -49,7 +49,7 @@ jobs:
           working_directory: . # [default: .] directory to run mise in
       - name: Install project dependencies
         run: |
-          mise reshim
+          eval "$(/home/chronicc/.local/bin/mise activate bash)"
           mise run install
       - name: Setup Pages
         id: pages
@@ -62,7 +62,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: Europe/Berlin
         run: |
-          mise reshim
+          eval "$(/home/chronicc/.local/bin/mise activate bash)"
           env | sort
           hugo \
             --gc \
