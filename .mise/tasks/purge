@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # mise description="Reset the project to a clean state"
-# mise depends=[]
+# mise depends=["clean"]
 
 cd $root
 

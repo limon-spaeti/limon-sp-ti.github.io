@@ -1,5 +1,7 @@
 [env]
+_.path = "./.bin"
+DART_SASS_VERSION="1.80.6"
+HUGO_VERSION="0.138.0"
 
 [tools]
-go = "latest"
-hugo = "0.138.0"
+go = "1.23.3"

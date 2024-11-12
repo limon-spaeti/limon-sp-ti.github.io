@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # mise description="Install project dependencies"
-# mise depends=[]
+# mise depends=["dependency:dart-sass", "dependency:hugo"]
 
 cd $root
-
-echo "Nothing to do here"

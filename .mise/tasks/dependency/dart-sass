@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# mise description="Install dart-sass"
+# mise depends=[]
+# mise sources=[".mise/tasks/dependency/dart-sass", ".mise.toml"]
+# mise outputs=[".bin/sass"]
+
+cd $root
+
+mkdir -p .bin
+echo "Installing dart-sass ${DART_SASS_VERSION}"
+curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+tar -xzf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+cp -r dart-sass/* .bin/
+touch .bin/sass
+rm -rf dart-sass*

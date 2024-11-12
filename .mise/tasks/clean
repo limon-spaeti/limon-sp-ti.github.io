@@ -4,4 +4,5 @@
 
 cd $root
 
-echo "Nothing to do here"
+echo "Removing custom binaries"
+rm -rf .bin
