@@ -1,0 +1,22 @@
+:root {
+    --cover-text-color: #000000!important;
+    --highlight: #7bb552!important;
+    --section-dark-bg-color: #5f9c3f!important;
+    --ul-li-icon: fa-check!important;
+    --cover-title-and-description-guard-bg-color: #f5bd1e!important;
+}
+
+.event-body {
+    border: 1px solid #c0c0c0;
+    border-radius: 16px;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.event-body p {
+    margin: 0;
+}
+
+.title-and-description-guard {
+    padding: 0.6em 2em!important;
+}
