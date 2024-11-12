@@ -1,0 +1,5 @@
+[env]
+
+[tools]
+go = "latest"
+hugo = "0.138.0"

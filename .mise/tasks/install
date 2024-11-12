@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# mise description="Install project dependencies"
+# mise depends=[]
+
+cd $root
+
+echo "Nothing to do here"
