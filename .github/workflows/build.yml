@@ -63,6 +63,7 @@ jobs:
           TZ: Europe/Berlin
         run: |
           mise activate bash
+          env | sort
           hugo \
             --gc \
             --minify \
