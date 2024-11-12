@@ -42,11 +42,13 @@ jobs:
         with:
           version: 2024.11.8 # [default: latest] mise version to install
           install: true # [default: true] run `mise install`
-          install_args: "bun" # [default: ""] additional arguments to `mise install`
+          install_args: "" # [default: ""] additional arguments to `mise install`
           cache: true # [default: true] cache mise using GitHub's cache
           experimental: true # [default: false] enable experimental features
           log_level: debug # [default: info] log level
           working_directory: . # [default: .] directory to run mise in
+      - name: Install project dependencies
+        run: mise run install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
