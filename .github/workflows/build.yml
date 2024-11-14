@@ -63,6 +63,7 @@ jobs:
           TZ: Europe/Berlin
         run: |
           eval "$(~/.local/share/mise/bin/mise activate bash)"
+          mise trust
           env | sort
           hugo \
             --gc \
