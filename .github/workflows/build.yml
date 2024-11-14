@@ -49,7 +49,7 @@ jobs:
           working_directory: . # [default: .] directory to run mise in
       - name: Install project dependencies
         run: |
-          eval "$(~/.local/bin/mise activate bash)"
+          eval "$(~/.local/share/mise/bin/mise)"
           mise run install
       - name: Setup Pages
         id: pages
@@ -62,7 +62,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: Europe/Berlin
         run: |
-          eval "$(~/.local/bin/mise activate bash)"
+          eval "$(~/.local/share/mise/bin/mise)"
           env | sort
           hugo \
             --gc \
