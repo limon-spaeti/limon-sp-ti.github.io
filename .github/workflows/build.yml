@@ -48,9 +48,7 @@ jobs:
           log_level: debug # [default: info] log level
           working_directory: . # [default: .] directory to run mise in
       - name: Install project dependencies
-        run: |
-          eval "$(mise activate bash)"
-          mise run install
+        run: mise run install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -64,7 +62,6 @@ jobs:
         run: |
           eval "$(mise activate bash)"
           eval "$(mise env)"
-          env | sort
           hugo \
             --gc \
             --minify \
